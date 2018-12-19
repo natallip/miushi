@@ -1,0 +1,25 @@
+.section-menu {
+  text-align: center;
+  padding: 70px 0;
+  @include media1200 {
+    padding: 50px 0;
+  }
+  @include media768 {
+    padding: 70px 0 30px;
+    .container {
+      padding: 0;
+    }
+    .owl-item {
+      opacity: .3;
+    }
+    .owl-item.active.center {
+      opacity: 1;
+    }
+  }
+  &__slider {
+    margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

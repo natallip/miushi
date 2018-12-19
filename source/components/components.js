@@ -1,0 +1,9 @@
+require('./OwlCarousel2-2.3.4/dist/owl.carousel.min');
+require('./burger/burger');
+require('./section-first-screen/section-first-screen');
+require('./section-menu/section-menu');
+require('./section-news/section-news');
+require('./section-advantages/section-advantages');
+require('./section-reviews/section-reviews');
+require('./section-about/section-about');
+require('./footer/footer');

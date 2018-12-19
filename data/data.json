@@ -1,0 +1,66 @@
+{
+  "navigation": {
+    "Главная": "#main",
+    "О компании": "#about",
+    "Отзывы": "#feed",
+    "Обратная связь": "#contact"
+  },
+  "sets": [
+    {"img": "set1.jpg", "title": "Сет №10", "descr": "72шт.|1560г.|1700Kkal", "price": "2050", "hit": true},
+    {"img": "set2.jpg", "title": "Сет №8", "descr": "24шт.|960г.|800Kkal", "price": "1590"},
+    {"img": "set3.jpg", "title": "Сет №5", "descr": "14шт.|450г.|400Kkal", "price": "510"},
+    {"img": "set4.jpg", "title": "Сет №6", "descr": "16шт.|460г.|490Kkal", "price": "400", "veg": true},
+    {"img": "set2.jpg", "title": "Сет №12", "descr": "24шт.|1060г.|1100Kkal", "price": "1750"}
+  ],
+  "rolls": [
+    {"img": "rolls1.png", "title": "Кунсей батакон", "descr": "8шт.|250г.|350Kkal", "price": "260"},
+    {"img": "rolls2.png", "title": "Унаги диру", "descr": "8шт.|90г.|88Kkal", "price": "280", "hot": true},
+    {"img": "rolls3.png", "title": "Филадельфия", "descr": "8шт.|450г.|400Kkal", "price": "280"},
+    {"img": "rolls4.png", "title": "Мексиканский", "descr": "8шт.|460г.|490Kkal", "price": "290"},
+    {"img": "rolls2.png", "title": "Унаги диру", "descr": "8шт.|960г.|800Kkal", "price": "280", "hot": true}
+    ],
+  "pizza": [
+    {"img": "pizza1.jpg", "title": "Баварская", "descr": "33см.|680г.|1350Kkal", "price": "480"},
+    {"img": "pizza2.jpg", "title": "Вегетарианская", "descr": "33см.|755г.|1800Kkal", "price": "380", "hot": true},
+    {"img": "pizza3.jpg", "title": "Пепперони", "descr": "33см.|615г.|1400Kkal", "price": "450"},
+    {"img": "pizza4.jpg", "title": "Классическая", "descr": "33см.|590г.|1490Kkal", "price": "390"},
+    {"img": "pizza2.jpg", "title": "Вегетарианская", "descr": "33см.|755г.|1800Kkal", "price": "380", "hot": true}
+  ],
+  "woks": [
+    {"img": "wok1.png", "title": "С говядиной", "descr": "400г.|1350Kkal", "price": "430", "souce": true},
+    {"img": "wok2.png", "title": "Скурицей", "descr": "400г.|1350Kkal", "price": "290", "souce": true},
+    {"img": "wok3.png", "title": "Пепперони", "descr": "400г.|1350Kkal", "price": "430", "souce": true},
+    {"img": "wok4.png", "title": "Классическая", "descr": "400г.|1350Kkal", "price": "430", "souce": true},
+    {"img": "wok2.png", "title": "Скурицей", "descr": "400г.|1350Kkal", "price": "290", "souce": true}
+  ],
+  "souces": [
+    {"name": "Китайский соус", "price": "140"},
+    {"name": "Соус тартар", "price": "130"},
+    {"name": "Кетчуп", "price": "100"}
+  ],
+  "news": [
+    {"img": "new1.png", "title": "Кунсей батакон", "descr": "8шт.|250г.|350Kkal", "price": "260", "new": true},
+    {"img": "new2.png", "title": "Унаги диру", "descr": "8шт.|90г.|800Kkal", "price": "280", "hot": true, "new": true},
+    {"img": "new3.png", "title": "Филадельфия", "descr": "8шт.|450г.|400Kkal", "price": "280", "new": true},
+    {"img": "new4.png", "title": "Мексиканский", "descr": "8шт.|460г.|490Kkal", "price": "290", "new": true},
+    {"img": "new2.png", "title": "Унаги диру", "descr": "8шт.|960г.|800Kkal", "price": "280", "hot": true, "new": true}
+  ],
+  "reasons": [
+    {"icon": "kitchen", "text": "100% ручная работа"},
+    {"icon": "dish", "text": "100% свежие ингредиенты"},
+    {"icon": "money", "text": "Самые низкие цены на рынке! (Нет ресторанной наценки)"},
+    {"icon": "like", "text": "Постоянный контроль качества на всех этапах"},
+    {"icon": "fish", "text": "Только охлажденная рыба (никакой заморозки)"},
+    {"icon": "rice", "text": "Мы используем только дорогой рис из Японии"},
+    {"icon": "octopus", "text": "Больше начинки, меньше риса!"},
+    {"icon": "knife", "text": "Мы не заменяем авокадо огурцом!"},
+    {"icon": "pizza", "text": "Вся пицца готовится из итальянской муки и Итальянского соуса"},
+    {"icon": "leaf", "text": "Мы не используем майонез!"}
+  ],
+  "socials": ["instagram", "facebook", "vk"],
+  "mainMenu": ["Суши", "Гунканы", "Инари", "Супы", "Салаты", "Горячие закуски", "Десерты", "Напитки", "Дополительно"],
+  "setsMenu": ["До 500 руб.", "До 1000 руб. (для двоих)", "До 1500 руб (для двоих - троих)", "До 2000 руб (большая компания)", "от 2000 руб (очень большая компания)", "С угрем", "Горячие", "Запеченые", "Суши"],
+  "rollsMenu": ["Традиционные/Классические", "Простые", "Теплые", "Запеченые", "Вегетарианские"],
+  "woksMenu": ["Яичная", "Удон", "Гречневая", "Стеклянная", "Рис"],
+  "pizzaMenu": ["Мясная", "Рыбная", "Сырная", "Вегетарианская"]
+}

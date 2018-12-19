@@ -1,0 +1,14 @@
+mixin section-first-screen
+    section.section-first-screen#section-first-screen
+        .top-slider.owl-carousel.owl-theme.owl-reponsive-1600#top-slider
+            - for (var i = 0; i<3; i++)
+                .top-slider__item
+                    .top-slider__img(style="background-image:url(images/bg-top.jpg)")
+                    .top-slider__content.container
+                        .top-slider__title-wrap
+                            h2.top-slider__title Счастливые часы
+                            .top-slider__sale
+                                span Скидка 15%
+                        .top-slider__text с 11:00 до 16:00 в будние дни
+                        button.btn.btn--accent Подробнее
+

@@ -1,0 +1,55 @@
+.navigation {
+  height: 100%;
+  @include media1200 {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    height: 100%;
+  }
+  &__item {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    a {
+      color: #000;
+      font-family: 'Open Sans Bold';
+      font-size: 14px;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+      padding: 0 30px;
+      display: block;
+      @include media1200 {
+        font-size: 22px;
+      }
+      @include media768 {
+        font-size: 16px;
+      }
+    }
+    &:hover, &--active {
+      background-color: #84c604;
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  &.open {
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    position: fixed;
+    background: #fff;
+    right: 0;
+    top: 0;
+    display: block;
+
+    .navigation__list {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

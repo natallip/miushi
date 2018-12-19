@@ -1,0 +1,89 @@
+.section-about {
+  text-align: center;
+  padding: 70px 0 100px;
+  @include media1200 {
+    padding: 50px 0 80px;
+  }
+  &__title {
+    text-align: left;
+    color: #32505a;
+    font-size: 24px;
+    margin: 20px 0 40px;
+    @include media1200 {
+      margin: 10px 0 30px;
+    }
+    @include media768 {
+      font-size: 20px;
+    }
+  }
+  .title {
+    @include media768 {
+      &:before, &:after {
+        display: none;
+      }
+    }
+  }
+  &__text {
+    text-align: left;
+    color: #4d4d4d;
+    font-size: 14px;
+    p {
+      line-height: 1.4;
+      margin-bottom: 22px;
+    }
+    @include media768 {
+      height: 420px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      transition: height 1s ease-out;
+    }
+  }
+  &__text.active {
+    height: auto;
+    transition: height 1s ease-out;
+  }
+  &__img {
+    float: right;
+    width: 277px;
+    height: 478px;
+    margin-left: 55px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    @include media1200 {
+      width: 220px;
+      margin-left: 30px;
+    }
+    @include media768 {
+      display: none;
+    }
+  }
+  &__btn .btn {
+    color: #fd4f10;
+    border-color: #fd4f10;
+    width: 280px;
+    height: 41px;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+    &:after {
+      content: 'Показать ещё';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    @include media768 {
+      display: block;
+    }
+  }
+  &__btn .btn.active {
+    &:after {
+      content: 'Свернуть';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

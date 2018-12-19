@@ -1,0 +1,95 @@
+.section-advantages {
+  text-align: center;
+  padding: 70px 0;
+  @include media1200 {
+    padding: 50px 0;
+  }
+  .title {
+    margin-bottom: 60px;
+    @include media1200 {
+      margin-bottom: 50px;
+    }
+    @include media768 {
+      &:after, &:before {
+        display: none;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    @include media768 {
+      height: 490px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      transition: all .5s linear;
+    }
+  }
+  &__list.active {
+    height: auto;
+    transition: all .5s linear;
+  }
+  &__item {
+    width: 20%;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    @include media1200 {
+      width: 30%;
+    }
+    @include media768 {
+      width: 90%;
+    }
+  }
+  &__icon {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 22px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: #1fba0a;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    color: #4d4d4d;
+    font-family: 'PT Sans Narrow Regular';
+    letter-spacing: 1px;
+    line-height: 1.6;
+  }
+  &__btn .btn {
+    color: #fd4f10;
+    border-color: #fd4f10;
+    width: 280px;
+    height: 41px;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+    &:after {
+      content: 'Показать ещё';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    @include media768 {
+      display: block;
+    }
+  }
+  &__btn .btn.active {
+    &:after {
+      content: 'Свернуть';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

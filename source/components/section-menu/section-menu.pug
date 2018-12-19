@@ -1,0 +1,20 @@
+mixin section-menu
+    section.section-menu#section-menu
+        .container
+            h3.title Сеты
+            .section-menu__slider.owl-carousel.owl-theme#menu-sets
+                each item in data.sets
+                    +item(item)
+            h3.title Роллы
+            .section-menu__slider.owl-carousel.owl-theme#menu-rolls
+                each item in data.rolls
+                    +item(item)
+            h3.title Пицца
+            .section-menu__slider.owl-carousel.owl-theme#menu-pizza
+                each item in data.pizza
+                    +item(item)
+            h3.title Wok
+            .section-menu__slider.owl-carousel.owl-theme#menu-woks
+                each item in data.woks
+                    +item(item)
+

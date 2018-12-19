@@ -1,0 +1,135 @@
+.header {
+  &__top {
+    border-bottom: 1px solid #f2f2f2;
+    @include media1200 {
+      display: none;
+    }
+  }
+  &__top-wrap, &__bottom-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__top-wrap {
+    height: 100px;
+  }
+  &__bottom-wrap {
+    height: 50px;
+    @include media1200 {
+      height: 87px;
+    }
+  }
+  &__logo {
+    width: 190px;
+    height: 70px;
+    svg {
+      width: 190px;
+      height: 70px;
+    }
+  }
+  &__logo-bottom {
+    display: none;
+    @include media1200 {
+      display: block;
+      svg {
+        width: 170px;
+        height: 55px;
+      }
+    }
+    @include media768 {
+      height: 40px;
+      width: 40px;
+      overflow: hidden;
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+  &__address {
+    font-family: 'PT Sans Narrow Regular';
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 20px;
+    background: url("../images/map.svg") no-repeat 0% 50%/ 16px;
+  }
+  &__email {
+    font-family: 'PT Sans Narrow Bold';
+    font-size: 18px;
+    padding-left: 25px;
+    background: url("../images/envelope.svg") no-repeat 0% 50%/ 16px;
+  }
+  &__navigation {
+    width: 70%;
+    height: 100%;
+    @include media1200 {
+      width: auto;
+    }
+  }
+  &__cabinet {
+    width: 20%;
+    @include media1200 {
+      width: 80px;
+    }
+  }
+}
+.phone {
+  display: flex;
+  flex-direction: column;
+
+  &__number {
+    font-family: 'Open Sans Bold';
+    font-size: 18px;
+  }
+  &__text {
+    font-family: 'Open Sans Regular';
+    font-size: 10px;
+  }
+}
+.cabinet {
+  color: #000;
+  font-family: 'Open Sans Bold';
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.basket, .user {
+  display: flex;
+  align-items: center;
+  span {
+    @include media1200 {
+      display: none;
+    }
+  }
+}
+.user__icon, .basket__icon {
+  width: 20px;
+  height: 20px;
+  fill: #1fba0a;
+  margin-right: 10px;
+  position: relative;
+  &:hover {
+    transform: scale(1.1);
+  }
+  svg {
+    width: 100%;
+    height: 100%  ;
+  }
+}
+.count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  color: #fff;
+  font-size: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background-color: #fd4f10;
+  text-align: center;
+  line-height: 12px;
+}

@@ -1,0 +1,52 @@
+mixin footer
+    footer.footer
+        .footer__wrap
+            .footer__row
+                .footer__col.footer__col--main
+                    .container
+                        .footer__trigger
+                            h5.footer__title Меню
+                            +svg('arrowDown')
+                        ul.footer__list
+                            each item in data.mainMenu
+                                li= item
+                .footer__col
+                    .container
+                        .footer__trigger
+                            h5.footer__title Сеты
+                            +svg('arrowDown')
+                        ul.footer__list
+                            each item in data.setsMenu
+                                li= item
+                .footer__col
+                    .container
+                        .footer__trigger
+                            h5.footer__title Роллы
+                            +svg('arrowDown')
+                        ul.footer__list
+                            each item in data.rollsMenu
+                                li= item
+                .footer__col
+                    .container
+                        .footer__trigger
+                            h5.footer__title Вок
+                            +svg('arrowDown')
+                        ul.footer__list
+                            each item in data.woksMenu
+                                li= item
+                .footer__col
+                    .container
+                        .footer__trigger
+                            h5.footer__title Пицца
+                            +svg('arrowDown')
+                        ul.footer__list
+                            each item in data.pizzaMenu
+                                li= item
+
+            .footer__row.footer__row--bottom.container
+                .footer__copyright МИЮШИ © 2017
+                .footer__socials
+                    ul.socials
+                        each item in data.socials
+                            li.socials__item
+                                +svg(item)

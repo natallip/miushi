@@ -1,0 +1,12 @@
+mixin section-news
+    section.section-news#section-news
+        .container
+            .section-news__list
+                .section-news__item.active(data-name="news") Новинки
+                .section-news__item(data-name="sales") Акции
+            .section-news__slider.owl-carousel.owl-theme.active#menu-news(data-slider="news")
+                each item in data.news
+                    +item(item)
+            .section-news__slider.owl-carousel.owl-theme#menu-sales(data-slider="sales")
+                each item in data.pizza
+                    +item(item)

@@ -1,0 +1,30 @@
+mixin header
+    header.header
+
+        .header__top
+            .container.header__top-wrap
+                .header__logo.logo
+                    img.header__logo.logo(src="images/logo.png" alt="logo")
+                .header__address г. Курск, ул. Ленина, д. 3
+                .header__email 78003332222@yandex.ru
+                .header__phone.phone
+                    .phone__number +7 (800) 333 2 222
+                    .phone__text Работаем с 11.00 до 23.00
+                button.header__callback.btn.btn--white Обратный звонок
+        .header__bottom
+            .container.header__bottom-wrap
+                .header__navigation
+                    +burger
+                    +nav
+                .header__logo-bottom.logo
+                    img.header__logo-bottom.logo(src="images/logo.png" alt="logo")
+                .header__cabinet.cabinet
+                    .user
+                        .user__icon
+                            +svg("user")
+                        span Кабинет
+                    .basket
+                        .basket__icon
+                            +svg("shopping-cart")
+                            .count 2
+                        span Корзина

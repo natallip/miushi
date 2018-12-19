@@ -1,0 +1,8 @@
+mixin section-reviews
+    section.section-reviews#section-reviews
+        .container
+            h3.title Отзывы
+            ul.section-reviews__list#reviews
+                -for(var i=0; i<3; i++)
+                    li.section-reviews__item
+                        img(src="images/review.jpg" alt="review")

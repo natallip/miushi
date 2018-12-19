@@ -1,0 +1,13 @@
+mixin section-advantages
+    section.section-advantages#section-advantages
+        .container
+            h3.title 10 причин купить у нас
+            ul.section-advantages__list#advantages
+                each item in data.reasons
+                    li.section-advantages__item
+                        .section-advantages__icon
+                            +svg(item.icon)
+                        .section-advantages__text= item.text
+
+            .section-advantages__btn
+                button.btn.btn--white
